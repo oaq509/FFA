@@ -31,6 +31,6 @@ After running the application, I ensured the data was correct in MySQL database 
 
 ## Screenshots
 
-!(https://drive.google.com/file/d/157jP0t_Wioo9zFz3Z6Z16vi9Cq8XmkLV/view?usp=sharing "sc1")
+![SC1](./screenshots/Trades.png "SC1")
 
 
