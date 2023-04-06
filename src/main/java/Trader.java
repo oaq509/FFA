@@ -31,7 +31,7 @@ public class Trader extends AbstractActor {
     }
 
     private void handleQuote(Quote quote) {
-        // Simple trading strategy: buy if price is below 50, sell if price is above 100
+        // Simple trading strategy: buy if price is below 50, sell if price is above 60
         double buyThreshold = 50.0;
         double sellThreshold = 60.0;
 
