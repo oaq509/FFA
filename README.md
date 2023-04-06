@@ -14,7 +14,7 @@ The purpose of this application is to simulate trading in making virtual money. 
 ## Project Setup
 
 1. The project was set up using the Maven build tool.
-2. Add necessary dependencies, such as Akka and MySQL Connector/J.
+2. Add necessary dependencies, such as Akka and MySQL Connector.
 
 ## Implementation Steps
 
