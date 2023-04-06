@@ -43,14 +43,14 @@ public class Trader extends AbstractActor {
             cash -= price * quantity;
             portfolio.put(symbol, portfolio.getOrDefault(symbol, 0) + quantity);
             System.out.printf("%s bought %d shares of %s at %.2f. Cash: %.2f%n", traderId, quantity, symbol, price, cash);
-            Trade trade = new Trade(traderId, quote, quantity, true); // Store trade
-            auditor.tell(trade, getSelf());
+            Trade trade = new Trade(traderId, quote, quantity, true); 
+            auditor.tell(trade, getSelf()); // Store trade transaction
         } else if (price > sellThreshold && portfolio.getOrDefault(symbol, 0) >= quantity) {
             cash += price * quantity;
             portfolio.put(symbol, portfolio.get(symbol) - quantity);
             System.out.printf("%s sold %d shares of %s at %.2f. Cash: %.2f%n", traderId, quantity, symbol, price, cash);
-            Trade trade = new Trade(traderId, quote, quantity, false); // Store trade
-            auditor.tell(trade, getSelf());
+            Trade trade = new Trade(traderId, quote, quantity, false); 
+            auditor.tell(trade, getSelf()); // Store trade transaction
         }
     }
 }
